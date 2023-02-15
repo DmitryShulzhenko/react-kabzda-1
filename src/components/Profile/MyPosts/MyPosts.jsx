@@ -3,13 +3,17 @@ import classes from './MyPosts.module.css';
 import Post from './Post/Post';
 
 
-const MyPosts = () => {
+const MyPosts = (props) => {
     return (
         <div>
             My posts
+            <div>
+                <textarea></textarea>
+                <button>Add post</button>
+            </div>
             <div className={classes.posts}>
-                <Post />
-                <Post />
+                <Post message='Hi, how are you?'/>
+                <Post message="It' my first post"/>
                 <Post />
                 <Post />
                 <Post />
